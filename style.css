@@ -1,0 +1,49 @@
+nav-item a {
+    color:white!important;
+}
+
+
+html{
+    height: 100%;
+    width:100%;
+}
+
+body{
+    background-color: pink;
+    height: 100%;
+    width:100%;
+}
+
+h6{
+    text-align:center;
+}
+
+.shadow{
+  box-sizing: border-box;
+  -webkit-box-shadow: 0 0 20px #700766!important;-moz-box-shadow: 0 0 20px #700766!important;box-shadow: 0 0 20px #700766!important;
+  border-radius: 15px;
+}
+
+.prodBox{
+    height:400px;
+    width:240px;
+    padding:0;
+    margin:15px;
+}
+
+.thumbPic{
+    display:block;
+    height:80%;
+    max-width:100%;
+    object-fit:contain;
+    border-top-left-radius: 15px!important;
+    border-top-right-radius: 15px!important;
+    
+}
+
+footer p,
+footer a {
+    display: inline;
+    margin-left: 2px;
+    margin-right:2px;
+}
