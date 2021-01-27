@@ -34,9 +34,21 @@ h6{
     text-align:center;
 }
 
+
+.pill{
+    border-radius: 50px;
+    border:3px solid rgb(230, 69, 245);
+    background-color: rgba(255,255,255, .7);
+    padding: 1px 10px 10px; /* only thing that worked to give to vertical text alignment W3docs https://www.w3docs.com/snippets/css/how-to-vertically-center-text-with-css.html */
+        
+}
+
+
+
 .shadow{
   box-sizing: border-box;
-  -webkit-box-shadow: 0 0 20px #700766!important;-moz-box-shadow: 0 0 20px #700766!important;box-shadow: 0 0 20px #700766!important;
+  /* -webkit-box-shadow: 0 0 20px #700766!important;-moz-box-shadow: 0 0 20px #700766!important;box-shadow: 0 0 20px #700766!important; */
+  -webkit-box-shadow: 0 0 20px navy!important;-moz-box-shadow: 0 0 20px navy!important;box-shadow: 0 0 20px navy!important;
   border-radius: 15px;
 }
 
@@ -67,16 +79,61 @@ h6{
     
 }
 
-body h6, p {
+body h6, p, h3 {
     color:#700766;
+    font-size: 1.3rem;
+    
 }  
 
-body h1 {
+
+.h6pSmall{
+    font-size: 1.1rem;
+}
+
+body h1, h2 {
     color:#f832fc;
+    font-size: 2.5em;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+.rowBack{
+    /* background-color: rgba(227, 159, 170,.5);  */
+    background-image: linear-gradient( rgba(75,0,130, .9),rgba(255,255,255, .9)) ;
+    border:3px solid rgb(230, 69, 245); 
+    border-radius: 25px;
+    padding:3px;
+}
+
+.rowBackProd {
+    
+    background-image: linear-gradient( rgba(0, 130, 119, 0.541),rgba(255,255,255, .9)) ;
+    border:3px solid rgb(230, 69, 245); 
+    border-radius: 25px;
+    padding:3px;
+
+}
+
+.colBack{
+
+    background-image: linear-gradient( rgba(255,255,255, .8),rgba(230, 69, 245, 1)) ;
+    /* border:3px solid rgb(230, 69, 245);  */
+    border:3px solid #700766; 
+    border-radius: 25px;
+    margin-top: 3px;
+    padding-top: 3px;;
 }
 
 
+.picBox{
+display: flex;
+align-items: center;
+justify-content: center;
+}
 
+.facePic{
+    object-fit: scale-down;
+    max-height: 400px;
+}
 
 .prodBox:hover{
     opacity: 0.7;
@@ -120,7 +177,6 @@ footer a {
 .modal-content {
   margin: auto;
   display: block;
-  height:auto;
   /* height:100%; */
   object-fit:contain;
   width: auto;
