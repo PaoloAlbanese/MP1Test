@@ -36,10 +36,10 @@ h6{
 
 
 .pill{
-    border-radius: 50px;
+    border-radius: 25px;
     border:3px solid rgb(230, 69, 245);
     background-color: rgba(255,255,255, .7);
-    padding: 1px 10px 10px; /* only thing that worked to give to vertical text alignment W3docs https://www.w3docs.com/snippets/css/how-to-vertically-center-text-with-css.html */
+    padding: 1px 8px 8px; /* only thing that worked to give to vertical text alignment W3docs https://www.w3docs.com/snippets/css/how-to-vertically-center-text-with-css.html */
         
 }
 
@@ -85,6 +85,20 @@ body h6, p, h3 {
     
 }  
 
+ol{
+    color:#700766;
+    font-size: 1.3rem;
+    font-weight:900;
+}
+
+ol li{
+    margin-left:15px;
+}
+
+li p {
+    font-weight:600;
+}
+
 
 .h6pSmall{
     font-size: 1.1rem;
@@ -92,7 +106,7 @@ body h6, p, h3 {
 
 body h1, h2 {
     color:#f832fc;
-    font-size: 2.5em;
+    font-size: 2.1em;
     text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 
@@ -102,6 +116,7 @@ body h1, h2 {
     border:3px solid rgb(230, 69, 245); 
     border-radius: 25px;
     padding:3px;
+    max-width: 1400px;
 }
 
 .rowBackProd {
@@ -110,18 +125,39 @@ body h1, h2 {
     border:3px solid rgb(230, 69, 245); 
     border-radius: 25px;
     padding:3px;
+    max-width: 1400px;
+
+}
+
+.rowBackHow {
+    
+    background-image: linear-gradient( rgba(130, 26, 0, 0.226),rgba(255,255,255, .9)) ;
+    border:3px solid rgb(230, 69, 245); 
+    border-radius: 25px;
+    padding:3px;
+    max-width: 1400px;
 
 }
 
 .colBack{
 
-    background-image: linear-gradient( rgba(255,255,255, .8),rgba(230, 69, 245, 1)) ;
-    /* border:3px solid rgb(230, 69, 245);  */
+    background-image: linear-gradient( rgba(255,255,255, .8),rgba(230, 69, 245, .7)) ;
     border:3px solid #700766; 
     border-radius: 25px;
     margin-top: 3px;
     padding-top: 3px;;
 }
+
+.colBackHow{
+
+    background-color:  rgb(248, 229, 253);
+    border:3px solid #700766; 
+    border-radius: 25px;
+    margin-top: 3px;
+    padding-top: 3px;
+    display:none;
+}
+
 
 
 .picBox{
@@ -167,9 +203,9 @@ footer a {
   width: 100%; /* Full width */
   height: 100%; /* Full height */
   overflow: auto; /* Enable scroll if needed */
-  /* background-color: rgb(0,0,0); /* Fallback color */
-  /* background-color: rgba(0,0,0,0.9); Black w/ opacity */ */
-  background-color: rgb(75,0,130); /* Fallback color */;
+  /* background-color: rgb(0,0,0);*/ /* Fallback color */
+  /* background-color: rgba(0,0,0,0.9);*/ /* Black w/ opacity */ 
+  background-color: rgb(75,0,130); /* Fallback color */
   background-color: rgba(75,0,130,0.9); /* indigo w/ opacity */
 }
 
@@ -232,6 +268,28 @@ footer a {
   color: #bbb;
   text-decoration: none;
   cursor: pointer;
+}
+
+.aclose {
+  position: sticky;
+  /* bottom: 100px!important;;
+  left:10px!important;; */
+  top: 0!important;
+  /* right: 0!important; */
+  color: #700766;
+  font-size: 40px;
+  font-weight: bold;
+  /* transition: 0.3s; */
+  text-align: right!important;
+  line-height: 30px;
+  width:98%;
+  height:30px;
+  display:block;
+  margin:0;
+  /* background-image: linear-gradient( rgba(255,255,255, .8),rgba(230, 69, 245, .7)) ; */
+  /* margin:0 5px 0 0; */
+  background-color:rgb(248, 229, 253);
+  cursor:pointer;
 }
 
 
@@ -535,21 +593,118 @@ footer a {
     background-position: center;
     background-repeat: no-repeat;
     z-index: 0!important;
-    max-height:500px;
+    max-height:400px;
     overflow:auto;
     /* Thin scrollbar for Chrome, Safari and Opera (mod from W3Schools) */
     -ms-overflow-style: thin; /* IE and Edge */
     scrollbar-width: thin; /* Firefox */
+
     
 }
 
 /* Thin scrollbar for Chrome, Safari and Opera (mod from W3Schools) */
-.hero-text-back::-webkit-scrollbar {
-  width: 2px;
+.hero-text-back::-webkit-scrollbar, .howtoList::-webkit-scrollbar {
+  width: 5px;
+  /* height: 10px; */
+  border-radius: 8px;
   
 }
+.hero-text-back::-webkit-scrollbar-track-piece, .howtoList::-webkit-scrollbar-track-piece{
+border-radius: 5px;
+}
 
-.hero-text-back::-webkit-scrollbar-thumb {
-  background-color: white;
-  outline: 2px solid #f832fc;
+
+.hero-text-back::-webkit-scrollbar-thumb, .howtoList::-webkit-scrollbar-thumb{
+  background-color: rgb(115, 3, 143);
+  /* outline: 2px solid #f832fc; */
+  /* outline: 2px solid purple; */
+  border-radius: 10px;
+
+}
+
+
+.hero-text-back::-webkit-scrollbar-track {
+margin-top: 20px;
+margin-bottom: 10px;  
+
+
+}
+
+.howtoList::-webkit-scrollbar-track {
+margin-top: 20px;
+margin-bottom: 20px; 
+   
+}
+
+
+/* -------------------------------------------------------------How To and form------------------------------------------------------- */
+
+
+.howtoList{
+    max-height: 400px;
+    overflow-y: auto;
+    /* Thin scrollbar for Chrome, Safari and Opera (mod from W3Schools) */
+    -ms-overflow-style: thin; /* IE and Edge */
+    scrollbar-width: thin; /* Firefox */
+}
+
+
+
+
+.contForm{
+  display:block;
+  background-color:rgb(245, 240, 225,.75);
+  margin-top: 0
+}
+
+.contForm h2{
+  font-size: 1.7em;
+  margin:15px 0 0 0;
+  color: rgb(247, 115, 211);
+  text-shadow:	rgb(27, 2, 73) 0px 0px 1px,   rgb(27, 2, 73) 0px 0px 1px,   rgb(27, 2, 73) 0px 0px 1px, rgb(27, 2, 73) 0px 0px 1px,   rgb(27, 2, 73) 0px 0px 1px,   rgb(27, 2, 73) 0px 0px 1px;-webkit-font-smoothing: antialiased;
+  background-color: rgba(255,255,255,0);
+}
+
+.contForm input[type=text], textarea {
+  position: relative;
+  /* width: 320px; */
+  width:90%;
+  max-width:400px;
+  border:1px solid #700766;
+  border-radius: 4px;
+}
+
+  .contForm  textarea {height:100px}
+  
+  
+  .contForm input[type=submit] {
+  background-color: #4796b5;
+  color: white;
+  height:30px;
+  /* width:100px; */
+  width:30%;
+  border:1px solid #700766;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-bottom:10px;
+  font-size: 1.2em;
+   
+}
+
+.contForm input[type=submit]:hover {
+ border-radius:10px;
+ background-color:#700766;
+ color:white;
+ border-bottom: 0px solid rgba(255, 0, 191, 0.384);
+ 
+}
+
+.formBack{
+
+    background-image: linear-gradient( rgba(255,255,255, .6), rgba(199, 59, 23, 0.538)) ;
+    border:3px solid #700766; 
+    border-radius: 25px;
+    margin-top: 3px;
+    padding-top: 3px;
+    max-height:400px;
 }

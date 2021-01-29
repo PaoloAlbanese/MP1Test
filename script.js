@@ -63,3 +63,19 @@ var sizeString = heroXW +"px "+ heroXH + "px";
 heroBack.style.backgroundSize= sizeString;
  };
  
+
+ // ----------------------Open How To nested list------------------------------------------------------------
+
+function openList(howToList){
+    var howLists = document.getElementsByClassName("colBackHow");
+    for (i=0; i < howLists.length; i++){
+        howLists[i].style.display="none"
+    }
+ var howToList = document.getElementById(howToList); 
+ howToList.style.display="block";
+ }
+
+ function closeList(howToList){
+     var howToList = document.getElementById(howToList); 
+    howToList.style.display="none";
+ }
