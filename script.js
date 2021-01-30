@@ -66,14 +66,50 @@ heroBack.style.backgroundSize= sizeString;
 
  // ----------------------Open How To nested list------------------------------------------------------------
 
+
+// document.getElementById("navLinkExfo").addEventListener("click", function(event){
+  
+  
+//     event.preventDefault();
+
+
+// });
+
 function openList(howToList){
     var howLists = document.getElementsByClassName("colBackHow");
     for (i=0; i < howLists.length; i++){
         howLists[i].style.display="none"
     }
+
+    var listValue = howToList;
  var howToList = document.getElementById(howToList); 
+ 
+ 
  howToList.style.display="block";
- }
+ console.log('aggi capit au\' lisst', howToList.id,('e listsvalue ?'),listValue )
+ 
+//  setTimeout(function(){
+// window.location.hash = listValue;
+
+// }, 1300); 
+ 
+ 
+
+ };
+
+
+//  $('.dropdown-item', '.nav-link').on('click',function() {
+//   $('.navbar-collapse').collapse('hide');
+// });
+
+//---------------------------collapse navbar after click, from Michael Coker https://stackoverflow.com/questions/42401606/how-to-hide-collapsible-bootstrap-4-navbar-on-click
+
+ $('.dropdown-item, .nav-link').on('click',function() {
+  $('.navbar-collapse').collapse('hide');
+});
+
+
+// window.location.hash = 'example';
 
  function closeList(howToList){
      var howToList = document.getElementById(howToList); 

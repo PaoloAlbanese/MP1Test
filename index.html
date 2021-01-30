@@ -12,7 +12,7 @@
 
     <link rel="stylesheet" href="style.css" type="text/css">
 
-    <title>Document</title>
+    <title>Guide to Clear Skin</title>
 
 
 </head>
@@ -23,7 +23,7 @@
 
     <nav class="navbar navbar-expand-lg navbar-dark  w-100" style="background-color: #ee86f0;">
         <div class="container-fluid">
-            <a class="navbar-brand text-white" href="#">Navbar</a>
+            <a class="navbar-brand text-white" href="index.html">Guide to Clear Skin</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
                 aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -31,13 +31,13 @@
             <div class="collapse navbar-collapse" id="navbarNavDropdown">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        <a class="nav-link active" aria-current="page" href="#BeginnersGuide">Beginners' Guide</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Features</a>
+                        <a class="nav-link" href="#howTo">How To..?</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Pricing</a>
+                        <a class="nav-link" href="#Products">Recommended Products</a>
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
@@ -45,9 +45,9 @@
                             Dropdown link
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                            <li><a class="dropdown-item" href="#">Action</a></li>
-                            <li><a class="dropdown-item" href="#">Another action</a></li>
-                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            <li><a id="navLinkExfo" class="dropdown-item" href="#exfoItem" onclick="openList('exfoHow')">How to exfoliate your skin properly</a></li>
+                            <li><a class="dropdown-item" href="#moistItem" onclick="openList('moistHow')">How to apply moisturiser correctly</a></li>
+                            <li><a class="dropdown-item" href="#oilItem" onclick="openList('oilHow')">How to prevent your face getting shiny</a></li>
                         </ul>
                     </li>
                 </ul>
@@ -58,7 +58,7 @@
     <div style="position:absolute;top:50px;height:80%;width:100%" id="heroTextFrame">
         <div class="hero-text-back rounded borderGirly p-2" id="heroBack">
             <div class="hero-text">
-                <h1 style="font-size:80px">Clear Skin Guide</h1>
+                <h1 style="font-size:80px">Guide to Clear Skin</h1>
                 <p style="color:#700766;font-size: 1.1rem;"><strong>Blemishes are somewhat like burpees. No one likes
                         them and everyone tries to avoid them. But with rising pollution and increasing levels of
                         stress, keeping the odd blemish at bay is near impossible, which leads to the ever present
@@ -100,8 +100,8 @@
 
 
     <div class="container" style="max-width: 98%">
-
-        <div class="row rowBack mx-auto" >
+<!-- <a href="" id="BeginnersGuide" style="position:absolute;top:-100px;"></a> -->
+        <div class="row rowBack mx-auto" id="BeginnersGuide">
             <div class="col-sm-12 mx-auto ">
                 <div class="mx-auto text-center mt-4 ">
                     <h1 class="pill" style="display: inline-block;">Beginners' Guide</h1>
@@ -174,7 +174,7 @@
         <br>
 
 
-        <div class="row rowBackHow mx-auto">
+        <div class="row rowBackHow mx-auto" id="howTo">
             <div class="col-sm-12 mx-auto ">
                 <div class="mx-auto text-center mt-4 ">
                     <h1 class="pill" style="display: inline-block;">How to..?</h1>
@@ -188,7 +188,7 @@
 
                 <div class=" mx-auto col-sm-12 col-lg-7">
                     <ul>
-                        <li style="cursor:pointer;" class="howItem" onclick="openList('exfoHow')">
+                        <li style="cursor:pointer;" id="exfoItem" class="howItem" onclick="openList('exfoHow')">
                             <p><strong>&nbsp;How to exfoliate your skin properly&nbsp;</strong></p>
                         </li>
 
@@ -378,7 +378,7 @@
                         <!-- </ul> -->
 
 
-                        <li style="cursor:pointer;" class="mt-5 howItem" onclick="openList('moistHow')">
+                        <li style="cursor:pointer;" id="moistItem" class="mt-5 howItem" onclick="openList('moistHow')">
                             <p><strong>&nbsp;How to apply moisturiser correctly&nbsp;</strong></p>
                         </li>
                         <ul class="colBackHow p-0 howtoList" id="moistHow" style="list-style:none;">
@@ -446,7 +446,7 @@
 
 
 
-                        <li style="cursor:pointer;" class="mt-5 howItem" onclick="openList('oilHow')">
+                        <li style="cursor:pointer;" id="oilItem" class="mt-5 howItem" onclick="openList('oilHow')">
                             <p><strong>&nbsp;How to prevent your face getting shiny&nbsp;</strong></p>
                         </li>
 
@@ -815,7 +815,7 @@
 
         <br>
         
-        <div class="row rowBackProd mx-auto" style="display:flex;justify-content:space-evenly;">
+        <div class="row rowBackProd mx-auto" style="display:flex;justify-content:space-evenly;" id="Products">
             
                 <div class="col-sm-12 mx-auto">
                     <!-- <h1 class="mx-auto text-center my-4"><span class="pill">Recommended Products</span></h1> -->

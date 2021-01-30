@@ -43,6 +43,10 @@ h6{
         
 }
 
+#BeginnersGuide, #howTo, #Products, #oilItem, #exfoItem, #moistItem {
+    scroll-margin-top: 60px;
+    
+}
 
 
 .shadow{
