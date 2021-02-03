@@ -67,40 +67,66 @@ heroBack.style.backgroundSize= sizeString;
  // ----------------------Open How To nested list------------------------------------------------------------
 
 
-// document.getElementById("navLinkExfo").addEventListener("click", function(event){
-  
-  
-//     event.preventDefault();
-
-
-// });
-
-function openList(howToList){
+// because we want to open/close 'How To' with linear transition, the inline Href attribute will fire tooo early while the previous closing transition is stil taking place
+    // as a result, the page scrolls to target, but the previous list is still shrinking, and if it is above the one opening, it will pull it above the view port, so th user only sees the bottom and has then to scroll up to view the top of the list.
+    // to work around that I had to put and eventlistener for the end of the transition, and only then scroll the href value passed to the function, and then finaly open the intended lists. 
+function openList(howToList, hrefTarget){
     var howLists = document.getElementsByClassName("colBackHow");
+    var ClickedItem = document.getElementById(howToList); 
+    var ClickedRect = ClickedItem.getBoundingClientRect();
+    var ClickedHeight = ClickedRect.height;
+    
+
     for (i=0; i < howLists.length; i++){
-        howLists[i].style.display="none"
+     
+        var InstList = howLists[i];
+        InstList.style.height="0";
+        // InstList.offsetHeight="0";
+        console.log('howlissi iHai', InstList)
+
+        InstList.style.display="none";
+        console.log( 'hai a spari si capitu')
+ 
     }
 
+if (ClickedHeight == 0){ // user has the option fo closing by re-clicking How To list item, not only by clicking "X", so the following will execute only if the list is not already expaneded
+for (i=0; i < howLists.length; i++){    
+   howLists[i].addEventListener('transitionend', function(event) {
+       
+       if (event.propertyName == "height"){
+   
+    console.log("CSS Property completed: " + event.propertyName );
+
+        var target = hrefTarget
+  console.log('Target we go ' , target )
+
+  ///-------------------------Dean Harding https://stackoverflow.com/questions/3163615/how-to-scroll-html-page-to-given-anchor
+  document.location.hash = target;
+
+       };
+}, false );
+  }
+  
+
+    
     var listValue = howToList;
  var howToList = document.getElementById(howToList); 
  
  
- howToList.style.display="block";
- console.log('aggi capit au\' lisst', howToList.id,('e listsvalue ?'),listValue )
- 
-//  setTimeout(function(){
-// window.location.hash = listValue;
 
-// }, 1300); 
- 
+howToList.style.display="block";
+setTimeout(function(){
+howToList.style.height="400px";
+
+ console.log('aggi capit au\' lisst', howToList.id,('e listsvalue ?'),listValue )
+}, 10);
+
  
 
  };
 
 
-//  $('.dropdown-item', '.nav-link').on('click',function() {
-//   $('.navbar-collapse').collapse('hide');
-// });
+}
 
 //---------------------------collapse navbar after click, from Michael Coker https://stackoverflow.com/questions/42401606/how-to-hide-collapsible-bootstrap-4-navbar-on-click
 
@@ -109,9 +135,21 @@ function openList(howToList){
 });
 
 
-// window.location.hash = 'example';
 
- function closeList(howToList){
-     var howToList = document.getElementById(howToList); 
-    howToList.style.display="none";
- }
+
+ function closeList(ClosehowToList){
+     var ClosehowToList = document.getElementById(ClosehowToList); 
+  
+    ClosehowToList.style.height="0";
+    
+            setTimeout(function(){
+                ClosehowToList.style.display="none";
+            },150)
+            
+
+            console.log('aggia a cchhiude');
+          
+        
+    };
+
+ 

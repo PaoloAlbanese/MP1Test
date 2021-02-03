@@ -1,5 +1,8 @@
+
 nav-item a {
     color:white!important;
+    line-height: 0;
+        
 }
 
 nav {
@@ -7,6 +10,7 @@ nav {
     top:0!important;
     z-index: 2;
 }
+
 
 .container{
     position:relative!important;
@@ -47,7 +51,15 @@ h6{
     scroll-margin-top: 60px;
     
 }
+/* ------------from sidhartha madipalli-------------------https://stackoverflow.com/questions/21201080/bootstrap-button-remove-outline-on-chrome-os-x */
+.btn:focus, .btn:active:focus, .btn.active:focus{
+    outline:none;
+    box-shadow:none;
+}
 
+.dropdown-toggle-split:hover{
+    color:#c6d3e6!important;
+}
 
 .shadow{
   box-sizing: border-box;
@@ -103,6 +115,10 @@ li p {
     font-weight:600;
 }
 
+li a:link {
+    text-decoration: none;
+}
+
 
 .h6pSmall{
     font-size: 1.1rem;
@@ -153,14 +169,22 @@ body h1, h2 {
 }
 
 .colBackHow{
-
+    -webkit-box-sizing: border-box!important;
+    -moz-box-sizing: border-box!important;
+    box-sizing: border-box!important;
+    /* box-sizing: border-box!important; */
     background-color:  rgb(248, 229, 253);
     border:3px solid #700766; 
     border-radius: 25px;
     margin-top: 3px;
     padding-top: 3px;
     display:none;
+    height:0;
+    /* transition: height .2s linear, border .1s linear; */
+    transition: height .2s linear;
+    
 }
+
 
 
 
