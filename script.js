@@ -89,7 +89,6 @@ function openList(howToList, hrefTarget){
  
     }
 
-if (ClickedHeight == 0){ // user has the option fo closing by re-clicking How To list item, not only by clicking "X", so the following will execute only if the list is not already expaneded
 for (i=0; i < howLists.length; i++){    
    howLists[i].addEventListener('transitionend', function(event) {
        
@@ -108,8 +107,8 @@ for (i=0; i < howLists.length; i++){
   }
   
 
-    
-    var listValue = howToList;
+if (ClickedHeight == 0){ // user has the option fo closing by re-clicking How To list item, not only by clicking "X", so the following will execute only if the list is not already expaneded   
+ var listValue = howToList;
  var howToList = document.getElementById(howToList); 
  
  

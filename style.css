@@ -2,6 +2,7 @@
 nav-item a {
     color:white!important;
     line-height: 0;
+    
         
 }
 
@@ -11,6 +12,9 @@ nav {
     z-index: 2;
 }
 
+nav-link {
+    font-size:1.3em!important;    
+}
 
 .container{
     position:relative!important;
@@ -22,6 +26,7 @@ html{
     height: 100%;
     width:100%;
 }
+
 
 body{
     background-color: pink;
@@ -60,6 +65,24 @@ h6{
 .dropdown-toggle-split:hover{
     color:#c6d3e6!important;
 }
+
+.dropdown-item:hover  {
+    color:white;
+    background-color: #FF69B4;
+}
+
+.dropdown-item:active {
+    color:white;
+    background-color: #FF69B4;
+}
+
+/* --------------------------------------Ganesh Putta https://stackoverflow.com/questions/38502499/styling-the-bootstrap-mobile-menu-on-navbar */
+.navbar-toggler {
+border: 1px solid white!important;
+}
+
+
+
 
 .shadow{
   box-sizing: border-box;
@@ -108,7 +131,7 @@ ol{
 }
 
 ol li{
-    margin-left:15px;
+    /* margin-left:15px; */
 }
 
 li p {
@@ -172,6 +195,7 @@ body h1, h2 {
     -webkit-box-sizing: border-box!important;
     -moz-box-sizing: border-box!important;
     box-sizing: border-box!important;
+    position:relative;
     /* box-sizing: border-box!important; */
     background-color:  rgb(248, 229, 253);
     border:3px solid #700766; 
@@ -185,7 +209,24 @@ body h1, h2 {
     
 }
 
+.barDropdown li p {
+    
+    color:#700766;
+    font-size: 1.1rem;
+    font-weight: 500;
+}
 
+.footerSize p {
+    font-size:1.4rem;    
+}
+
+.footerSize i {
+    font-size:1.2rem;    
+}
+
+.footerSize i:hover{
+    color:#700766!important;
+}
 
 
 .picBox{
@@ -260,6 +301,7 @@ footer a {
   color: #ccc;
   padding: 10px 0;
   /* height: 80px; */
+  /* font-size:x-large; */
 }
 
 /* Add Animation */
@@ -302,7 +344,8 @@ footer a {
   position: sticky;
   /* bottom: 100px!important;;
   left:10px!important;; */
-  top: 0!important;
+  /* bottom: 0!important; */
+  top: 0px!important;
   /* right: 0!important; */
   color: #700766;
   font-size: 40px;
@@ -319,6 +362,101 @@ footer a {
   background-color:rgb(248, 229, 253);
   cursor:pointer;
 }
+
+.pointDown{
+    position: absolute;
+  bottom: 0px!important;
+  /* left:10px!important; */
+  bottom: 0px!important;
+  /* top: 90%!important; */
+  /* right: 0!important; */
+  color: #700766;
+  font-size: 40px;
+  font-weight: bold;
+  /* transition: 0.3s; */
+  text-align: right!important;
+  line-height: 30px;
+  width:98%;
+  /* height:60px; */
+  display:block;
+  margin:0;
+  padding:0;
+  /* background-image: linear-gradient( rgba(255,255,255, .8),rgba(230, 69, 245, .7)) ; */
+  /* margin:0 5px 0 0; */
+  background-color:rgb(248, 229, 253);
+  
+
+}
+
+.endOfList{
+  font-size: 24px;  
+
+  height:30px;  
+  position: absolute!important;
+  /* bottom: 0px!important; */
+  /* top:70px!important; */
+  right: 5px!important;
+  color: #700766;
+  font-weight: bold;
+  text-align: right!important;
+  display:block;
+  margin:0;
+  /* padding:30px; */
+  padding-right:5px;
+  /* padding-bottom:15px; */
+  width: 100%;
+  z-index:4!important;
+  background-color:rgb(248, 229, 253);
+  /* font-size:x-large; */
+}
+
+.bottomCover{
+    font-size: 24px;
+    font-weight: bold;
+    padding-right:10px;
+    padding-bottom:5px;
+    right: 5px!important;
+    margin-bottom:0!important;
+    background-color:rgb(248, 229, 253);
+    position:sticky;
+    text-align:right;
+    z-index:3!important;
+    /* font-size:x-large; */
+    width:100%;
+    /* height:20px; */
+    bottom:0px;
+    
+    
+}
+
+
+/* .endOfListOl{
+  position: absolute;
+  bottom: 23px!important;
+  right: 25px!important;
+  color: #700766;
+  font-weight: bold;
+  text-align: right!important;
+  display:block;
+  margin:0;
+  padding:0; */
+  
+  /* width: 80%; */
+  /* z-index:1!important; */
+  /* background-color:rgb(248, 229, 253);
+  font-size:x-large; */
+/* } */
+
+/* .padEffect {
+    margin-bottom:0!important;
+    background-color:rgb(248, 229, 253);
+    position:sticky;
+    bottom:0;
+    width: 100%;
+    height: 20px;
+    z-index:3!important;
+} */
+
 
 
 
