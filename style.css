@@ -62,6 +62,7 @@ h6{
     box-shadow:none;
 }
 
+
 .dropdown-toggle-split:hover{
     color:#c6d3e6!important;
 }
@@ -213,12 +214,24 @@ body h1, h2 {
     
 }
 
+
+
+
 .barDropdown li p {
     
     color:#700766;
     font-size: 1.1rem;
-    font-weight: 500;
+    font-weight: 500;   
+
 }
+
+@media screen and (max-width:350px) {
+  .barDropdown li p {
+    font-size: .9rem;
+  }
+}
+
+
 
 .footerSize p {
     font-size:1.4rem;    
