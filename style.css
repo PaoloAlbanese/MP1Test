@@ -227,7 +227,7 @@ body h1, h2 {
 
 @media screen and (max-width:350px) {
   .barDropdown li p {
-    font-size: .9rem;
+    font-size: .5rem;
   }
 }
 
