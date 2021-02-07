@@ -70,12 +70,12 @@ heroBack.style.backgroundSize= sizeString;
 // because we want to open/close 'How To' with linear transition, the inline Href attribute will fire tooo early while the previous closing transition is stil taking place
     // as a result, the page scrolls to target, but the previous list is still shrinking, and if it is above the one opening, it will pull it above the view port, so th user only sees the bottom and has then to scroll up to view the top of the list.
     // to work around that I had to put and eventlistener for the end of the transition, and only then scroll the href value passed to the function, and then finaly open the intended lists. 
-function openList(howToList, hrefTarget){
+function openList(howToList, hrefTarget,clickFrom){
     var howLists = document.getElementsByClassName("colBackHow");
     var ClickedItem = document.getElementById(howToList); 
     var ClickedRect = ClickedItem.getBoundingClientRect();
     var ClickedHeight = ClickedRect.height;
-    
+    var clickedfrom = clickFrom
 
     for (i=0; i < howLists.length; i++){
      
@@ -83,12 +83,13 @@ function openList(howToList, hrefTarget){
         InstList.style.height="0";
         // InstList.offsetHeight="0";
         console.log('howlissi iHai', InstList)
-
+        //----------------------------Mahmoud Ibrahim https://stackoverflow.com/questions/10744299/scroll-back-to-the-top-of-scrollable-div
+        $(InstList).animate({ scrollTop: 0 }, "fast");
         InstList.style.display="none";
-        console.log( 'hai a spari si capitu')
- 
+        console.log( 'hai a spari si capitu')    
     }
 
+if (clickedfrom == 'fromList'){
 for (i=0; i < howLists.length; i++){    
    howLists[i].addEventListener('transitionend', function(event) {
        
@@ -105,9 +106,9 @@ for (i=0; i < howLists.length; i++){
        };
 }, false );
   }
-  
+// };
 
-if (ClickedHeight == 0){ // user has the option fo closing by re-clicking How To list item, not only by clicking "X", so the following will execute only if the list is not already expaneded   
+if (ClickedHeight == 0){ // user has the option fo closing by re-clicking the How To list item, not only by clicking "X", so the following will execute only if the list is not already expaneded   
  var listValue = howToList;
  var howToList = document.getElementById(howToList); 
  
@@ -125,7 +126,34 @@ howToList.style.height="400px";
  };
 
 
+};
+
+// } 
+
+if (clickedfrom == 'fromNav') {
+
+
+    
+    
+    var listValue = howToList;
+ var howToList = document.getElementById(howToList); 
+ var target = hrefTarget
+ 
+
+howToList.style.display="block";
+setTimeout(function(){
+howToList.style.height="400px";
+}, 1);
+
+setTimeout(function(){
+
+document.location.hash = target;
+}, 250);
 }
+
+
+};
+
 
 //---------------------------collapse navbar after click, from Michael Coker https://stackoverflow.com/questions/42401606/how-to-hide-collapsible-bootstrap-4-navbar-on-click
 
