@@ -221,15 +221,17 @@ body h1, h2 {
     
     color:#700766;
     font-size: 1.1rem;
-    font-weight: 500;   
+    font-weight: 500;
+    overflow:hidden;
+    text-overflow: ellipsis;   
 
 }
 
-@media screen and (max-width:350px) {
+/* @media screen and (max-width:350px) {
   .barDropdown li p {
     font-size: .5rem;
   }
-}
+} */
 
 
 
