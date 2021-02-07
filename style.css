@@ -880,6 +880,13 @@ margin-bottom: 20px;
   background-color: rgba(255,255,255,0);
 }
 
+
+@media only screen and (max-width: 350px){
+  .contForm h2{
+  font-size: 1.5em;
+  }
+}
+
 .contForm input[type=text], textarea {
   position: relative;
   /* width: 320px; */
