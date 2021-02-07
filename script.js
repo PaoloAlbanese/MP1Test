@@ -76,6 +76,7 @@ function openList(howToList, hrefTarget,clickFrom){
     var ClickedRect = ClickedItem.getBoundingClientRect();
     var ClickedHeight = ClickedRect.height;
     var clickedfrom = clickFrom
+    var target = hrefTarget
 
     for (i=0; i < howLists.length; i++){
      
@@ -97,7 +98,7 @@ for (i=0; i < howLists.length; i++){
    
     console.log("CSS Property completed: " + event.propertyName );
 
-        var target = hrefTarget
+        // var target = hrefTarget
   console.log('Target we go ' , target )
 
   ///-------------------------Dean Harding https://stackoverflow.com/questions/3163615/how-to-scroll-html-page-to-given-anchor
@@ -137,7 +138,7 @@ if (clickedfrom == 'fromNav') {
     
     var listValue = howToList;
  var howToList = document.getElementById(howToList); 
- var target = hrefTarget
+//  var target = hrefTarget
  
 
 howToList.style.display="block";
@@ -153,7 +154,17 @@ document.location.hash = target;
 
 
 };
+//---------------------------Scroll How To List back up by clicking on upwards arrow--------------
+function ScrollUpList(howToList){
+    var List = document.getElementById(howToList);
+         $(List).animate({ scrollTop: 0 }, "fast");
+}
 
+//---------------------------Scroll How To List to bottom by clicking on upwards arrow--------------
+function ScrollDownList(howToList){
+    var List = document.getElementById(howToList);
+         $(List).animate({ scrollTop: $(List)[0].scrollHeight }, "fast"); // andsien on https://stackoverflow.com/questions/270612/scroll-to-bottom-of-div
+}
 
 //---------------------------collapse navbar after click, from Michael Coker https://stackoverflow.com/questions/42401606/how-to-hide-collapsible-bootstrap-4-navbar-on-click
 
