@@ -123,6 +123,14 @@ border: 1px solid white!important;
     
 }
 
+@media only screen and (max-width: 350px){
+  .thumbPic {
+    width: 270px;
+  }
+}
+
+
+
 body h6, p, h3 {
     color:#700766;
     font-size: 1.3rem;
