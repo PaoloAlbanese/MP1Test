@@ -42,7 +42,7 @@ h6{
 
 .pill{
     border-radius: 25px;
-    border:3px solid rgb(230, 69, 245);
+    border:3px solid rgb(2219,112,147); 
     background-color: rgba(255,255,255, .7);
     padding: 1px 8px 8px; /* only thing that worked to give to vertical text alignment W3docs https://www.w3docs.com/snippets/css/how-to-vertically-center-text-with-css.html */
         
@@ -150,14 +150,14 @@ li a:link {
 }
 
 body h1, h2 {
-    color:#f832fc;
+    color:#DB7093;
     font-size: 2.1em;
     text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 
 .rowBack{
     background-image: linear-gradient( rgba(75,0,130, .9),rgba(255,255,255, .9)) ;
-    border:3px solid rgb(230, 69, 245); 
+    border:3px solid rgb(219,112,147); 
     border-radius: 25px;
     padding:3px;
     max-width: 1400px;
@@ -166,7 +166,7 @@ body h1, h2 {
 .rowBackProd {
     
     background-image: linear-gradient( rgba(0, 130, 119, 0.541),rgba(255,255,255, .9)) ;
-    border:3px solid rgb(230, 69, 245); 
+    border:3px solid rgb(219,112,147); 
     border-radius: 25px;
     padding:3px;
     max-width: 1400px;
@@ -176,7 +176,7 @@ body h1, h2 {
 .rowBackHow {
     
     background-image: linear-gradient( rgba(130, 26, 0, 0.226),rgba(255,255,255, .9)) ;
-    border:3px solid rgb(230, 69, 245); 
+    border:3px solid rgb(219,112,147); 
     border-radius: 25px;
     padding:3px;
     max-width: 1400px;
@@ -669,7 +669,7 @@ footer a {
   top: 50%;
   left: 50%;
   color: #f832fc;
-  color: #DB7093;
+  
     
 }
 
@@ -757,7 +757,7 @@ margin-bottom: 20px;
 .contForm h2{
   font-size: 1.7em;
   margin:15px 0 0 0;
-  color: rgb(247, 115, 211);
+  color: rgb(219,112,147);
   text-shadow:	rgb(27, 2, 73) 0px 0px 1px,   rgb(27, 2, 73) 0px 0px 1px,   rgb(27, 2, 73) 0px 0px 1px, rgb(27, 2, 73) 0px 0px 1px,   rgb(27, 2, 73) 0px 0px 1px,   rgb(27, 2, 73) 0px 0px 1px;-webkit-font-smoothing: antialiased;
   background-color: rgba(255,255,255,0);
 }

@@ -109,7 +109,8 @@ The live deployed website can be found [here](https://paoloalbanese.github.io/MP
 * My unnamed girlfriend for:
 * * providing the inspiration for the website;
 * * sourcing some appropiate content;
-* *  taking pictures of some her skin products;
+* * taking pictures of some her skin products;
+* * giving advice on color scheme;
 * * testing the website for me;
 
 
