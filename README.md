@@ -40,9 +40,9 @@ webiste visitor|obtain information on recommended, cheap skin care products|know
 
 ## Wireframes
 
-* ![Desktop page](https://github.com/PaoloAlbanese/MP1Test/blob/903cb92c797bb83026500bde68af8baff4030f5b/images/MP1%20WF/Desktop%20page.png)
-* ![Tablet Page](https://github.com/PaoloAlbanese/MP1Test/blob/903cb92c797bb83026500bde68af8baff4030f5b/images/MP1%20WF/tablet%20page.png)
-* ![Mobile page](https://github.com/PaoloAlbanese/MP1Test/blob/903cb92c797bb83026500bde68af8baff4030f5b/images/MP1%20WF/mobile%20page.png)
+* [Desktop page](https://github.com/PaoloAlbanese/MP1Test/blob/master/images/MP1%20WF/Desktop%20page.png?raw=true)
+* [Tablet Page](https://github.com/PaoloAlbanese/MP1Test/blob/master/images/MP1%20WF/tablet%20page.png?raw=true)
+* [Mobile page](https://github.com/PaoloAlbanese/MP1Test/blob/master/images/MP1%20WF/mobile%20page.png?raw=true)
 
 ---
 
