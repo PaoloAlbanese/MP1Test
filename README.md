@@ -1,45 +1,122 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# Skin Goals
 
-Welcome PaoloAlbanese,
+A website for information and advice on skin care. Open to all viewers, but aiming especially at the young female population. The website provides general information on matters related to skin care, and accepts queries from the public via an online contact form. A number of inexpensive skin care products are recommended and displayed on the website but there is no marketing affiliation of any kind.
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use.
+Website goal:
+* to share the website owner's knoledge on skin care, to provide advice on skin blemishes treatment and recommend effective, inexpensive skin care products.
 
-## Gitpod Reminders
+Users' goal:
+* Obtain information and useful tips on skin care and treatements, as well on recommndation on skin care products.
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
+---
 
-`python3 -m http.server`
+## UX
+* The website consists of one page, subdivided into three sections, enclosed in stacked, bordered frames, each with its own color background:
+* * an introductory text on the matter of skin problems;
+* * an How-To section with tips for specific issues and treatments;
+* * a display of recommended products
+* Predominantly fair-pink color scheme.
+* Navbar on top of the page with links to the page sub-sections.
+* Hero image immediatley under the navbar; it contains at its centre a text that briefly states the website mission.
+* Transparent bubble background animations rising from the bottom of the page travel to the top of the page swinging side to side.
+* Easy to fill forms to contact the website owner.
+* The introductory section (called Beginner's Guide) displays a woman's face picture in its right half from large screens onwards. 
+* How-To section with clicakble list items that open, on click, and with a transition effect, little boxes with scrollable text inside of them. 
+* Recommended products section with product image thumbnails that open, on click, full-page modals with product images and descriptions.These thumbnails are aligned in a screen-responsive bootstrap row and column table.
 
-A blue button should appear to click: *Make Public*,
+---
 
-Another blue button should appear to click: *Open Browser*.
+## User stories
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+As a .. | I want to .. | So I can ..
+ --- | --- | --- 
+website owner|share my knowledge and tips|help viewers learn how to overcome / mitigate their skin problems
+website visitor|obtain useful information on skin treatement matters|learn how to cure my own or somebody else's skin blemishes
+webiste visitor|contact the website owner on issues not openly addressed on the website|get more detailed advice on my specific issues
+website owner|review and respond to advice requests through the contact form|be able to provide better, tailored advice to single viewers
+webiste visitor|obtain information on recommended, cheap skin care products|know how to shop products of good value
 
-A blue button should appear to click: *Make Public*,
+---
 
-Another blue button should appear to click: *Open Browser*.
+## Wireframes
 
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+* ! [Desktop page](https://github.com/PaoloAlbanese/MP1Test/blob/903cb92c797bb83026500bde68af8baff4030f5b/images/MP1%20WF/Desktop%20page.png)
+* ! [Tablet Page](https://github.com/PaoloAlbanese/MP1Test/blob/903cb92c797bb83026500bde68af8baff4030f5b/images/MP1%20WF/tablet%20page.png)
+* ! [Mobile page](https://github.com/PaoloAlbanese/MP1Test/blob/903cb92c797bb83026500bde68af8baff4030f5b/images/MP1%20WF/mobile%20page.png)
 
-## Updates Since The Instructional Video
+---
 
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
+## Features
+* A navbar at the top of the page, with links to the page's sub-sections.
+* * On small to medium screens all links will collapse to a button on the top-right corner, with the exception of the website's title, Skin Goals, which serves as Home link (redirecting to the same page).
+* * The links have a color transition effect on mouse hover.
+* * The How-To link is in reality split in:
+* * * a link to the How-To section iself, reachable by clicking on the"How To.." wording, and
+* * * a dropdown menu, opened by clicking on the inverted triangle symbol ("&#9660;"), containing links to specific parts of the "How-To" section. 
+* * * * each of these links will lead to and open a box in the How-To section, which in turn contains a scrollable text.
+* Under the navbar an hero image streches the full width of the page;
+* * In its center a frame with a replica of the hero image (to give the impression of a transparent background) contains a text with a brief description of the website's mission.The background of the inside frame needed to be filled with a picture to prevent the bubble animations from being visible behind the text and impair readibility.
+* The transparent bubble animations rise slowly from the bottom of the page and slide under each section's semi opaque background, still being vaguely detectable.
+* The page's sub-sections stack up, each centered horizontally and stretching along with the browser window width up to 1400px. 
+* The first section from the top, "Begineers' Guide", contains a textual introduction to the main source of most skin problems, that is, oily skin. * * On large screen and onwards, a picture of a woman's appears to the right of the text
+* The middle section, "How To...", contains a list of clickable lines of text and a contact form.
+* * The list and the form stack up up to medium screens, and stand side by side from large screens onwards.
+* * Each item on the list opens, underneath itself, a box with scrollable text.
+* * On the top right corner a "X" can be clicked to close the box;
+* * The box can also be closed by clicking again on the same line of text that opened it.
+* * On the bottom right corner of the box a downward arrow indicates that the text can be scrolled down further.
+* * * On click, same downward arrow scrolls the text down to the end.
+* * The downward arrow is replaced by an upward arrow once the text is fully scrolled down.
+* * * On click, the upward arrow will scroll the text back up to the start.
+* The "Reccomended Products" section contains thumbnails of recommended consumer products.
+* * These thumbnails are organized in a screen responsive bootstrap row-and column grid system.
+* * On click, each thumbnail opens a page-wide modal with the products image and biref description.
+* * The modal is closed by cliking on the "X" in the top right corner.
+* At the bottom of the page, a page wide footer contains:
+* * a link back to the top of page and
+* * some social links' icons
 
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
+---
 
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
+## Technologies used
+* Gitpod develpoment enviroment
+* HTML5
+* CSS3, Bootstrap 4 & 5, 
+* Javascript, Jquery
 
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
 
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
+---
 
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
+## Cloning this project from Github to your Gitpod account.
+This project's repository can be found [here](https://github.com/PaoloAlbanese/cocktails).
+Please access the repository on a Chrome browsers complete with [gitpod extension](https://www.gitpod.io/docs/browser-extension/).
+By clicking the green "Gitpod" button in the top right corner of the repository, you will create a new workspace from the repository's code in your enviroment.
+The live deployed webiste can be found on [Heroku](https://cocktails-flask.herokuapp.com/).
 
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
+---
 
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
+## Testing
+* Testing consisted in repeaditely running loading the web page in the Web Preview, toggling screen size in inspect mode, and to let any glitches come to surface.
+* Stand-out background colors were temporarily assigned to divs and other HTML elements to visually identify them in Preview.
+* Print and console.log statement where placed in the code to locate where any error was/wasn't occurring. 
+* My own girlfriend viewed the web page and tested its functionalities.
 
---------
+---
 
-Happy coding!
+
+
+## Acknowledgments
+* My unnamed girlfriend for:
+* * providing the inspiration for the website;
+* * sourcing some appropiate content;
+* *  taking pictures of some her skin products;
+* * testing the website for me;
+
+
+---
+
+## Notes to the Assessors:
+
+
+
+# The End

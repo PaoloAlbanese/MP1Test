@@ -33,10 +33,6 @@ body{
     height: 100%;
     width:100%;
 
-     /* height: 100vh;
-    margin: 0;
-    padding: 0;
-    overflow-x: hidden; */
 }
 
 h6{
@@ -89,15 +85,12 @@ border: 1px solid white!important;
 
 .shadow{
   box-sizing: border-box;
-  /* -webkit-box-shadow: 0 0 20px #700766!important;-moz-box-shadow: 0 0 20px #700766!important;box-shadow: 0 0 20px #700766!important; */
   -webkit-box-shadow: 0 0 20px navy!important;-moz-box-shadow: 0 0 20px navy!important;box-shadow: 0 0 20px navy!important;
   border-radius: 15px;
 }
 
 .borderHero {
-    border:3px solid;
-  /* border-color:#FF69B4; */
-  /* border-color:white; */
+  border:3px solid;
   border-color:#b62b73;
   border-radius: 15px;
 }
@@ -109,7 +102,6 @@ border: 1px solid white!important;
     margin:15px;
     cursor: pointer;
     transition: 0.3s;
-    /* background-color: 	#FF69B4; */
     background-color: #FAD9F4;
 }
 
@@ -143,9 +135,6 @@ ol{
     font-weight:900;
 }
 
-ol li{
-    /* margin-left:15px; */
-}
 
 li p {
     font-weight:600;
@@ -167,7 +156,6 @@ body h1, h2 {
 }
 
 .rowBack{
-    /* background-color: rgba(227, 159, 170,.5);  */
     background-image: linear-gradient( rgba(75,0,130, .9),rgba(255,255,255, .9)) ;
     border:3px solid rgb(230, 69, 245); 
     border-radius: 25px;
@@ -235,12 +223,6 @@ body h1, h2 {
 
 }
 
-/* @media screen and (max-width:350px) {
-  .barDropdown li p {
-    font-size: .5rem;
-  }
-} */
-
 
 
 .footerSize p {
@@ -280,15 +262,7 @@ footer a {
 
 /* ----------------------Modal CSS taken and modified from W3Schools---------- */
 
-/* #myImg {
-  border-radius: 5px;
-  cursor: pointer;
-  transition: 0.3s;
-}
 
-#myImg:hover {opacity: 0.7;} */
-
-/* The Modal (background) */
 .modal {
   display: none; /* Hidden by default */
   position: fixed; /* Stay in place */
@@ -327,8 +301,6 @@ footer a {
   text-align: center;
   color: #ccc;
   padding: 10px 0;
-  /* height: 80px; */
-  /* font-size:x-large; */
 }
 
 /* Add Animation */
@@ -369,71 +341,38 @@ footer a {
 
 .aclose {
   position: sticky;
-  /* bottom: 100px!important;;
-  left:10px!important;; */
-  /* bottom: 0!important; */
   top: 0px!important;
-  /* right: 0!important; */
   color: #700766;
   font-size: 40px;
   font-weight: bold;
-  /* transition: 0.3s; */
   text-align: right!important;
   line-height: 30px;
   width:98%;
   height:30px;
   display:block;
   margin:0;
-  /* background-image: linear-gradient( rgba(255,255,255, .8),rgba(230, 69, 245, .7)) ; */
-  /* margin:0 5px 0 0; */
   background-color:rgb(248, 229, 253);
   cursor:pointer;
 }
 
-/* .pointDown{
-    position: absolute;
-  bottom: 0px!important;
-  
-  bottom: 0px!important;
-
-  color: #700766;
-  font-size: 40px;
-  font-weight: bold;
-  
-  text-align: right!important;
-  line-height: 30px;
-  width:98%;
-
-  display:block;
-  margin:0;
-  padding:0;
- 
-  background-color:rgb(248, 229, 253);
-  
-
-} */
 
 .endOfList{
   font-size: 24px;  
   cursor: pointer;  
   height:30px;  
   position: absolute!important;
-  /* bottom: 0px!important; */
-  /* top:70px!important; */
   right: 5px!important;
   color: #700766;
   font-weight: bold;
   text-align: right!important;
   display:block;
   margin:0;
-  /* padding:30px; */
   padding-right:5px;
-  /* padding-bottom:15px; */
   width: 100%;
   z-index:4!important;
   background-color:rgb(248, 229, 253);
   
-  /* font-size:x-large; */
+
 }
 
 .bottomCover{
@@ -448,9 +387,7 @@ footer a {
     position:sticky;
     text-align:right;
     z-index:3!important;
-    /* font-size:x-large; */
     width:100%;
-    /* height:20px; */
     bottom:0px;
     cursor: pointer;
     
@@ -458,33 +395,6 @@ footer a {
     
 }
 
-
-/* .endOfListOl{
-  position: absolute;
-  bottom: 23px!important;
-  right: 25px!important;
-  color: #700766;
-  font-weight: bold;
-  text-align: right!important;
-  display:block;
-  margin:0;
-  padding:0; */
-  
-  /* width: 80%; */
-  /* z-index:1!important; */
-  /* background-color:rgb(248, 229, 253);
-  font-size:x-large; */
-/* } */
-
-/* .padEffect {
-    margin-bottom:0!important;
-    background-color:rgb(248, 229, 253);
-    position:sticky;
-    bottom:0;
-    width: 100%;
-    height: 20px;
-    z-index:3!important;
-} */
 
 
 
@@ -500,16 +410,6 @@ footer a {
 /* ----------------------Floating bubbles CSS taken and modified from Frank's Laboratory---------- */
 
 
-
-/* body {
-    background: #111d5e;
-    color: #333;
-    font: 100% Lato, Arial, Sans Serif;
-    height: 100vh;
-    margin: 0;
-    padding: 0;
-    overflow-x: hidden;
-} */
 
 #background-wrap {
     bottom: 0;
@@ -751,7 +651,6 @@ footer a {
 /* --------------- Hero image CSS W3SCHools------------------------- */
 
 .hero-image {
-  /* background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("images/herbs-3141838.jpg"); */
   background-image: linear-gradient(rgba(255, 255, 255, 0.0) ,rgba(255,192,203, 1)) , url("images/herbs-3141838.jpg");
   height: 80%;
   width: 100%;
@@ -759,9 +658,7 @@ footer a {
   background-repeat: no-repeat;
   background-size: 100% 100%;
   position: relative;
-  /* position:relative!important; */
   top: 50px!important;
-    /* opacity: 1; */
   z-index: -2!important;
 
 }
@@ -800,7 +697,6 @@ footer a {
 /* Thin scrollbar for Chrome, Safari and Opera (mod from W3Schools) */
 .hero-text-back::-webkit-scrollbar, .howtoList::-webkit-scrollbar {
   width: 5px;
-  /* height: 10px; */
   border-radius: 8px;
   
 }
@@ -810,28 +706,15 @@ border-radius: 5px;
 
 
 .hero-text-back::-webkit-scrollbar-thumb {
-  /* background-color: rgb(115, 3, 143); */
   background-color: #b62b73;
-  /* outline: 2px solid #f832fc; */
-  /* border: 1px solid rgb(253, 105, 216); */
-  /* border: 1px solid white; */
-  /* border-radius: 10px; */
   border-radius:50px 0px 0px 50px;
-  
-  /* background-color: rgb(253, 105, 216); */
 
 }
 
 
 .howtoList::-webkit-scrollbar-thumb {
   background-color: rgb(115, 3, 143);
-  
-  /* outline: 2px solid #f832fc; */
-  /* border: 2px solid rgb(115, 3, 143); */
-  /* border-radius: 10px; */
   border-radius:50px 0px 0px 50px;
-  
-  /* background-color: rgb(253, 105, 216); */
 
 }
 
