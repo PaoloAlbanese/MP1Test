@@ -131,7 +131,7 @@ The live deployed website can be found [here](https://paoloalbanese.github.io/MP
 ## Notes to the Assessors:
 * The Contact form is not functional, it's just there for show.
 * I am sorry for the unhappy name of the repository, initially I planned to work on a test website first, but then I realized that would take away too much time unnecessarily. 
-* In Developer Tools, on small screens, the webpage may appear to show a gap on the right;&nbsp;![hand side](https://github.com/PaoloAlbanese/MP1Test/blob/master/images/dev_tools_sm_screens.PNG);&nbsp;
+* In Developer Tools, on small screens, the webpage may appear to show a gap on the right;&nbsp;![hand side](https://github.com/PaoloAlbanese/MP1Test/blob/master/images/dev_tools_sm_screens.PNG)&nbsp;
 however, if the browser is refreshed, the normal layout is restored. I don't know what causes this.
 
 ### Thank you for reading.
