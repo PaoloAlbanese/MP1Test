@@ -48,7 +48,7 @@ h6{
         
 }
 
-#BeginnersGuide, #howTo, #Products, #oilItem, #exfoItem, #moistItem {
+#BeginnersGuide, #howTo, #Products, #oilItem, #exfoItem, #moistItem, #contForm {
     scroll-margin-top: 60px;
     
 }
@@ -66,13 +66,11 @@ h6{
 
 .dropdown-item:hover {
     color:white;
-    /* background-color: #FF69B4; */
     background-color: #b62b73;
 }
 
 .dropdown-item:active {
     color:white;
-    /* background-color: #FF69B4; */
     background-color: #b62b73;
 }
 
@@ -163,8 +161,7 @@ body h1, h2 {
     max-width: 1400px;
 }
 
-.rowBackProd {
-    
+.rowBackProd {  
     background-image: linear-gradient( rgba(0, 130, 119, 0.541),rgba(255,255,255, .9)) ;
     border:3px solid rgb(219,112,147); 
     border-radius: 25px;
@@ -173,8 +170,7 @@ body h1, h2 {
 
 }
 
-.rowBackHow {
-    
+.rowBackHow {  
     background-image: linear-gradient( rgba(130, 26, 0, 0.226),rgba(255,255,255, .9)) ;
     border:3px solid rgb(219,112,147); 
     border-radius: 25px;
@@ -184,7 +180,6 @@ body h1, h2 {
 }
 
 .colBack{
-
     background-image: linear-gradient( rgba(255,255,255, .8),rgba(230, 69, 245, .7)) ;
     border:3px solid #700766; 
     border-radius: 25px;
@@ -197,7 +192,6 @@ body h1, h2 {
     -moz-box-sizing: border-box!important;
     box-sizing: border-box!important;
     position:relative;
-    /* box-sizing: border-box!important; */
     background-color:  rgb(248, 229, 253);
     border:3px solid #700766; 
     border-radius: 25px;
@@ -205,7 +199,6 @@ body h1, h2 {
     padding-top: 3px;
     display:none;
     height:0;
-    /* transition: height .2s linear, border .1s linear; */
     transition: height .2s linear;
     
 }
@@ -214,7 +207,6 @@ body h1, h2 {
 
 
 .barDropdown li p {
-    
     color:#700766;
     font-size: 1.1rem;
     font-weight: 500;
@@ -273,9 +265,6 @@ footer a {
   width: 100%; /* Full width */
   height: 100%; /* Full height */
   overflow: auto; /* Enable scroll if needed */
-  /* background-color: rgb(0,0,0);*/ /* Fallback color */
-  /* background-color: rgba(0,0,0,0.9);*/ /* Black w/ opacity */ 
-  background-color: rgb(75,0,130); /* Fallback color */
   background-color: rgba(75,0,130,0.9); /* indigo w/ opacity */
 }
 
@@ -283,7 +272,6 @@ footer a {
 .modal-content {
   margin: auto;
   display: block;
-  /* height:100%; */
   object-fit:contain;
   width: auto;
   height:auto;
@@ -390,12 +378,7 @@ footer a {
     width:100%;
     bottom:0px;
     cursor: pointer;
-    
-    
-    
 }
-
-
 
 
 
@@ -407,7 +390,7 @@ footer a {
 }
 
 
-/* ----------------------Floating bubbles CSS taken and modified from Frank's Laboratory---------- */
+/* ----------------------Floating bubbles CSS taken from codes4education.com https://codes4education.com/animated-bubbles-using-html-pure-css/---------- */
 
 
 
@@ -733,7 +716,7 @@ margin-bottom: 20px;
 }
 
 
-/* -------------------------------------------------------------How To and form------------------------------------------------------- */
+/* -------------------------------------------------------------How To and Contact form------------------------------------------------------- */
 
 
 .howtoList{
@@ -785,7 +768,6 @@ margin-bottom: 20px;
   background-color: #4796b5;
   color: white;
   height:30px;
-  /* width:100px; */
   width:30%;
   border:1px solid #700766;
   border-radius: 4px;
