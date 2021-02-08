@@ -32,9 +32,9 @@ As a .. | I want to .. | So I can ..
  --- | --- | --- 
 website owner|share my knowledge and tips|help viewers learn how to overcome / mitigate their skin problems
 website visitor|obtain useful information on skin treatement matters|learn how to cure my own or somebody else's skin blemishes
-webiste visitor|contact the website owner on issues not openly addressed on the website|get more detailed advice on my specific issues
+website visitor|contact the website owner on issues not openly addressed on the website|get more detailed advice on my specific issues
 website owner|review and respond to advice requests through the contact form|be able to provide better, tailored advice to single viewers
-webiste visitor|obtain information on recommended, cheap skin care products|know how to shop products of good value
+website visitor|obtain information on recommended, cheap skin care products|know how to shop products of good value
 
 ---
 
@@ -88,10 +88,10 @@ webiste visitor|obtain information on recommended, cheap skin care products|know
 ---
 
 ## Cloning this project from Github to your Gitpod account.
-This project's repository can be found [here](https://github.com/PaoloAlbanese/cocktails).
+This project's repository can be found [here](https://github.com/PaoloAlbanese/MP1Test).
 Please access the repository on a Chrome browsers complete with [gitpod extension](https://www.gitpod.io/docs/browser-extension/).
 By clicking the green "Gitpod" button in the top right corner of the repository, you will create a new workspace from the repository's code in your enviroment.
-The live deployed webiste can be found on [Heroku](https://cocktails-flask.herokuapp.com/).
+The live deployed website can be found [here](https://paoloalbanese.github.io/MP1Test/).
 
 ---
 
