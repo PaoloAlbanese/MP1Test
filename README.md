@@ -89,7 +89,7 @@ website visitor|obtain information on recommended, cheap skin care products|know
 ---
 
 ## Cloning this project from Github to your Gitpod account.
-This project's repository can be found [here](https://github.com/PaoloAlbanese/MP1Test).
+This project's repository can be found on [Github](https://github.com/PaoloAlbanese/MP1Test).
 Please access the repository on a Chrome browsers complete with [gitpod extension](https://www.gitpod.io/docs/browser-extension/).
 By clicking the green "Gitpod" button in the top right corner of the repository, you will create a new workspace from the repository's code in your environment.
 The live deployed website can be found [here](https://paoloalbanese.github.io/MP1Test/).
@@ -103,6 +103,50 @@ The live deployed website can be found [here](https://paoloalbanese.github.io/MP
 * My own girlfriend viewed the web page and tested its functionalities.
 
 ---
+
+## 3 bugs found
+* When closed(height=0), the How-To list boxes were still showing as one purple line. That was the box's border.&nbsp;
+![h0dblock.PNG](https://github.com/PaoloAlbanese/MP1Test/blob/master/images/h0dblock.PNG)&nbsp;
+So i had to set the display to "none" as well as the height to 0:
+```
+for (i = 0; i < howLists.length; i++) {
+        var InstList = howLists[i];
+        InstList.style.height = "0";
+        //----------------------------Mahmoud Ibrahim https://stackoverflow.com/questions/10744299/scroll-back-to-the-top-of-scrollable-div
+        $(InstList).animate({ scrollTop: 0 }, "fast");
+        
+            InstList.style.display = "none";
+           
+    }
+```
+* The How-To lists have a transition effect. if one "How-to" list item is clicked while another is still open, and there is an href on such list item, the page scrolls to the How-to list item immediately while the other one is still closing, and at the same time the How-list box being called by the click starts to open.
+As a result the page scrolls first, then, if the box that is closing is above the one that is opening, the one opening gets "sucked" at the top outside of the viewport height.&nbsp;![HTboxmisalign.PNG](https://github.com/PaoloAlbanese/MP1Test/blob/master/images/HTboxmisalign.PNG)&nbsp;
+So I had to forego the inline href and put in place a script that delays the jumping to location until the transition has finished.
+
+
+```
+for (i = 0; i < howLists.length; i++) {
+            howLists[i].addEventListener('transitionend', function (event) {
+                if (event.propertyName == "height") {
+
+                    ///-------------------------Dean Harding https://stackoverflow.com/questions/3163615/how-to-scroll-html-page-to-given-anchor
+                    document.location.hash = target;
+
+                };
+            }, false);
+```
+
+* Inside the How-To section, clicking on a How to list item closes the box, in case it was already open. It opens it if it was previously closed, by converse.
+This is a second way to close the box other than by clicking on the "X", and is achieved by closing all the How-To boxes first every time the JS function is executed.
+Then if the box's height, stored in a variable at the beginning of the function, is greater than 0, the same box gets opened. This function and the one to jump to href don't work well when the script is called from the navbar, from some reason: the boxes are only closing or staying closed and the page doesn't scrol to location.
+So I had to put an if statement in the script disguishing between clicks from the navbar and clicks form the How-To section. When clicked from the navbar, the function simply gives back the display and height to box, and then jumps to location.
+```
+if (clickedfrom == 'fromList') {......
+
+if (clickedfrom == 'fromNav') {....
+```
+
+
 
 
 ## Acknowledgments
@@ -126,12 +170,16 @@ The live deployed website can be found [here](https://paoloalbanese.github.io/MP
 * JS code to jump to href location, from [Dean Harding](https://stackoverflow.com/questions/3163615/how-to-scroll-html-page-to-given-anchor);
 * Jquery code to scroll down text automatically, from [andsien](https://stackoverflow.com/questions/270612/scroll-to-bottom-of-div);
 * Jquery code to collapse navbar after click, from [Michael Coker](https://stackoverflow.com/questions/42401606/how-to-hide-collapsible-bootstrap-4-navbar-on-click);
+* JS code to detect the end of a transition, from [Joseph Silber](https://stackoverflow.com/questions/8814631/how-do-i-detect-a-transition-end-without-a-javascript-library);
+* Navbar-toggle styling, from [Ganesh Putta](https://stackoverflow.com/questions/38502499/styling-the-bootstrap-mobile-menu-on-navbar);
+* Remove styling from btn class, from [sidhartha madipalli](https://stackoverflow.com/questions/21201080/bootstrap-button-remove-outline-on-chrome-os-x);
+* Give to vertical text alignment in pill div, from [W3docs](https://www.w3docs.com/snippets/css/how-to-vertically-center-text-with-css.html).
 ---
 
 ## Notes to the Assessors:
 * The Contact form is not functional, it's just there for show.
 * I am sorry for the unhappy name of the repository, initially I planned to work on a test website first, but then I realized that would take away too much time unnecessarily. 
-* In Developer Tools, on small screens, the webpage may appear to show a gap on the right;&nbsp;![hand side](https://github.com/PaoloAlbanese/MP1Test/blob/master/images/dev_tools_sm_screens.PNG)  &nbsp;
+* In Developer Tools, on small screens, the webpage may appear to show a gap on the right hand side;&nbsp;![dev_tools_sm_screens.PNG](https://github.com/PaoloAlbanese/MP1Test/blob/master/images/dev_tools_sm_screens.PNG)  &nbsp;
 however, if the browser is refreshed, the normal layout is restored. I don't know what causes this.
 
 ### Thank you for reading.
